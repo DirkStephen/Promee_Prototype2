@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<toolkit:Popup xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+               xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="Promee_Prototype2.CreateTask.AddtaskPopup"
+               CanBeDismissedByTappingOutsideOfPopup="False"
+               Color="Transparent">
+    <Border
+        BackgroundColor="#FFB800"
+        WidthRequest="320"
+        StrokeShape="RoundRectangle 5">
+
+        <VerticalStackLayout
+        Spacing="2">
+
+            <Label
+        Text="Create Task"
+        HorizontalOptions="Center"
+        FontSize="20"
+        TextColor="Black"
+        Margin="15"
+        FontAttributes="Bold"/>
+
+            <Label
+        Text="Task name"
+        FontSize="15"
+        TextColor="Black"
+        Margin="10,0,0,0"/>
+
+            <Border
+        Margin="10,0,10,10"
+        Padding="10"
+        BackgroundColor="White"
+        StrokeShape="RoundRectangle 10"
+        Stroke="Transparent"
+        HeightRequest="60">
+                <Border.Shadow>
+                    <Shadow Brush="Black"
+                Offset="0,5"
+                Opacity=".3" />
+                </Border.Shadow>
+                <Entry Background="White"
+            x:Name="EnterTask"
+            Placeholder="Enter a task"
+            TextColor="Black"
+            VerticalTextAlignment="Center"
+            FontSize="15"/>
+            </Border>
+
+            <Label
+        Text="Date"
+        FontSize="15"
+        TextColor="Black"
+        Margin="10,0,0,0"/>
+
+            <Border
+        Margin="10,0,10,10"
+        Padding="10"
+        BackgroundColor="White"
+        StrokeShape="RoundRectangle 10"
+        Stroke="Transparent"
+        HeightRequest="60">
+                <Border.Shadow>
+                    <Shadow Brush="Black"
+                Offset="0,5"
+                Opacity=".3" />
+                </Border.Shadow>
+                <DatePicker 
+            x:Name="InputDate"
+            TextColor="gray"
+            FontSize="15"
+            Format="MM/dd/yyyy" 
+            Date ="{Binding SelectedDate}"/>
+            </Border>
+            <HorizontalStackLayout>
+                <VerticalStackLayout>
+                    <Label
+                        Text="Start Time"
+                        FontSize="15"
+                        TextColor="Black"
+                        Margin="10,0,0,0"/>
+
+                    <Border
+                        Margin="10,0,10,10"
+                        Padding="10"
+                        BackgroundColor="White"
+                        StrokeShape="RoundRectangle 10"
+                        Stroke="Transparent"
+                        HeightRequest="60">
+                        <Border.Shadow>
+                            <Shadow Brush="Black"
+                                    Offset="0,5"
+                                    Opacity=".3" />
+                        </Border.Shadow>
+                        <TimePicker 
+                            x:Name="InputStartTime"
+                            TextColor="gray"
+                            FontSize="15"
+                            Format="h:mm tt"
+                            Time="{Binding SelectedSTime}"/>
+                    </Border>
+                </VerticalStackLayout>
+                <Image
+                    Source="rightarrow.png"
+                    HeightRequest="20"/>
+
+                <VerticalStackLayout>
+
+                    <Label
+                       Text="End Time"
+                       FontSize="15"
+                       TextColor="Black"
+                       Margin="10,0,0,0"/>
+
+                    <Border
+                       Margin="10,0,10,10"
+                       Padding="10"
+                       BackgroundColor="White"
+                       StrokeShape="RoundRectangle 10"
+                       Stroke="Transparent"
+                       HeightRequest="60">
+                        <Border.Shadow>
+                            <Shadow Brush="Black"
+                                   Offset="0,5"
+                                   Opacity=".3" />
+                        </Border.Shadow>
+                        <TimePicker 
+                           x:Name="InputEndTime"
+                           TextColor="gray"
+                           FontSize="15"
+                           Format="h:mm tt"
+                           Time="{Binding SelectedETime}"/>
+                    </Border>
+                </VerticalStackLayout>
+
+            </HorizontalStackLayout>
+
+
+            <Label
+        Text="Add note"
+        FontSize="15"
+        TextColor="Black"
+        Margin="10,0,0,0"/>
+
+            <Border
+        Margin="10,10,10,0"
+        Padding="10"
+        BackgroundColor="White"
+        StrokeShape="RoundRectangle 10"
+        Stroke="Transparent"
+        HeightRequest="60">
+                <Border.Shadow>
+                    <Shadow Brush="Black"
+                Offset="0,5"
+                Opacity=".3" />
+                </Border.Shadow>
+                <Entry Background="White"
+            x:Name="EnterNote"
+            Placeholder="Notes"
+            TextColor="Black"
+            VerticalTextAlignment="Center"
+            FontSize="15"/>
+            </Border>
+
+            <HorizontalStackLayout
+        Spacing="20"
+        HorizontalOptions="End"
+        Margin="15">
+                <Button
+            Text="Cancel"
+            HeightRequest="45"
+            WidthRequest="90"
+            TextColor="Black"
+            BackgroundColor="White"
+            TextTransform="Uppercase"
+            CornerRadius="50"
+            FontAttributes="Bold"
+            Clicked="OnCancelButtonClicked"/>
+
+                <Button
+            Text="Create"
+            HeightRequest="45"
+            WidthRequest="90"
+            TextColor="White"
+            TextTransform="Uppercase"
+            CornerRadius="50"
+            FontAttributes="Bold"
+            Clicked="OnCreateButtonClicked"
+            BackgroundColor="Black"/>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </Border>
+</toolkit:Popup>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Promee_Prototype2.Promee_Menu.Promee_FriendsPage"
+             Title="Promee_FriendsPage">
+    <Shell.TitleView>
+        <Image 
+           Source="promeelogobig.png"
+           Margin="-65,0,0,0"
+        />
+    </Shell.TitleView>
+    <AbsoluteLayout>
+        <BoxView Color="#FFB800"
+                 HeightRequest="130"
+                 WidthRequest="1000"
+                 AbsoluteLayout.LayoutFlags="XProportional"
+                 AbsoluteLayout.LayoutBounds="0, 0, 20, 20" />
+
+        <Label
+            x:Name="Friendslbl"
+            Text="Friends"
+            FontFamily="EricaOne-Regular.ttf"
+            FontSize="25"
+            AbsoluteLayout.LayoutFlags="XProportional"
+            AbsoluteLayout.LayoutBounds="0.55, 20, 120, 50"/>
+
+
+        <HorizontalStackLayout 
+            Margin="20,100,0, 0"
+            Spacing="6">
+
+            <VerticalStackLayout 
+               Spacing="6">
+
+                <HorizontalStackLayout
+                   Spacing="15"
+                    
+                    >
+                    <ImageButton
+                        x:Name="FriendsImgBtn"
+                        Source="friendcircle.png" 
+                        HeightRequest="90"
+                        WidthRequest="90"/>
+                    <Label
+                        Margin="0,40,0,0"
+                        x:Name="Friend"
+                        Text="Juan Dela Cruz"
+                        FontFamily="DmSans-Regular.ttf"
+                        FontAttributes="Bold"
+                        FontSize="20" />
+
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout
+                    Spacing="15">
+
+                    <ImageButton
+                        x:Name="FriendsImgBtn1"
+                        Source="friendcircle.png" 
+                        HeightRequest="90"
+                        WidthRequest="90"/>
+
+                    <Label
+                        Margin="0,40,0,0"
+                        x:Name="Friend1"
+                        Text="Juanita Dela Cruz"
+                        FontFamily="DmSans-Regular.ttf"
+                        FontAttributes="Bold"
+                        FontSize="20" />
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout
+                        Spacing="15">
+                    <ImageButton
+                         x:Name="FriendsImgBtn2"
+                         Source="friendcircle.png" 
+                         HeightRequest="90"
+                         WidthRequest="90"/>
+                    <Label
+                         Margin="0,40,0,0"
+                         x:Name="Friend2"
+                         Text="Juan Dela Cruz"
+                         FontFamily="DmSans-Regular.ttf"
+                         FontAttributes="Bold"
+                         FontSize="20" />
+
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout
+                    Spacing="15">
+                    <ImageButton
+                        x:Name="FriendsImgBtn3"
+                        Source="friendcircle.png" 
+                        HeightRequest="90"
+                        WidthRequest="90"/>
+                    <Label
+                         Margin="0,40,0,0"
+                         x:Name="Friend3"
+                         Text="Juan Dela Cruz"
+                         FontFamily="DmSans-Regular.ttf"
+                         FontAttributes="Bold"
+                         FontSize="20" />
+
+                </HorizontalStackLayout>
+
+
+                <HorizontalStackLayout
+                    Spacing="15">
+                    <ImageButton
+                        x:Name="FriendsImgBtn4"
+                        Source="friendcircle.png" 
+                        HeightRequest="90"
+                        WidthRequest="90"/>
+                    <Label
+                        Margin="0,40,0,0"
+                        x:Name="Friend4"
+                        Text="Juan Dela Cruz"
+                        FontFamily="DmSans-Regular.ttf"
+                        FontAttributes="Bold"
+                        FontSize="20" />
+
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+
+        </HorizontalStackLayout>
+    </AbsoluteLayout>
+</ContentPage>

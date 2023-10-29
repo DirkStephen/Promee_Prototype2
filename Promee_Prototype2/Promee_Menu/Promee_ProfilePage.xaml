@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Promee_Prototype2.Promee_Menu.Promee_ProfilePage"
+             Title="Promee_ProfilePage">
+    <Shell.TitleView>
+        <Image 
+           Source="promeelogobig.png"
+           Margin="-65,0,0,0"
+        />
+    </Shell.TitleView>
+    <ScrollView>
+        <StackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="240"/>
+                </Grid.RowDefinitions>
+
+                <BoxView 
+                    Color="#FFB800"
+                    Grid.Row="0" />
+                
+                <Label
+                    Text="My Profile"
+                    FontFamily="EricaOne"
+                    FontSize="25"
+                    HorizontalOptions="Center"/>
+                <Ellipse  
+                    Fill="white"  
+                    WidthRequest="130"  
+                    HeightRequest="130"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Start"
+                    Margin="30,40,0,0"/>
+                <Label
+                    Text="My Name"
+                    TextColor="Black"
+                    FontSize="20"
+                    VerticalOptions="Center"
+                    HorizontalOptions="End"
+                    Margin="50,0,70,20"
+                    FontAttributes="Bold"/>
+                <Label/>
+
+                <Label
+                VerticalOptions="Center"
+                HorizontalOptions="End"
+                Margin="0,40,40,0">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span 
+                                Text="email@gmail.com"
+                                TextColor="Blue"
+                                TextDecorations="Underline"
+                                FontSize="18">
+
+                                <Span.GestureRecognizers>
+                                    <TapGestureRecognizer 
+                                        Command="{Binding TapCommand}"
+                                        CommandParameter="https://learn.microsoft.com/dotnet/maui/" />
+                                </Span.GestureRecognizers>
+                            </Span>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Button 
+                    Text="Edit Profile"
+                    TextColor="White"
+                    BackgroundColor="Black"
+                    FontAttributes="Bold"
+                    WidthRequest="145"
+                    HeightRequest="35"
+                    VerticalOptions="End" 
+                    HorizontalOptions="End" 
+                   
+                    Margin="0,0,35,30"/>
+            </Grid>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="540"/>
+                </Grid.RowDefinitions>
+
+                <BoxView 
+                    Color="white"
+                    Grid.Row="1" />
+                <Frame 
+                    BorderColor="Black"
+                    CornerRadius="20"
+                    HeightRequest="280"
+                    WidthRequest="335"
+                    VerticalOptions="Start"
+                    Margin="0,10,0,0"/>
+                <Frame
+                    BorderColor="#FFB800"
+                    BackgroundColor="#FFB800"
+                    CornerRadius="20"
+                    HeightRequest="52"
+                    WidthRequest="333"
+                    VerticalOptions="Start"
+                    HorizontalOptions="Fill"
+                    Margin="0,11,0,0"/>
+                <Image
+                    Source="ribbon"
+                    HeightRequest="35"
+                    WidthRequest="30"
+                    VerticalOptions="Start"
+                    HorizontalOptions="Start"
+                    Margin="30,20,0,0"/>
+                <Label 
+                    Text="Achievements"
+                    TextColor="Black"
+                    FontAttributes="Bold"
+                    FontSize="20"
+                    HorizontalOptions="Center"
+                    Margin="0,25,100,0"/>
+                <Image
+                    Source="ribbonblk.png"
+                    HeightRequest="40"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Start"
+                    Margin="50,70,0,0"/>
+                <Label
+                    Text="Achievement 1"
+                    TextColor="Black"
+                    FontSize="15"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Start"
+                    FontAttributes="Bold"
+                    Margin="10,80,90,0"/>
+                <BoxView 
+                    Color="Black"
+                    HeightRequest="1"
+                    WidthRequest="285"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="Start"
+                    Margin="0,115,0,0"/>
+                <Image
+                    Source="ribbonblk.png"
+                    HeightRequest="40"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Start"
+                    Margin="50,122,0,0"/>
+                <Label
+                    Text="Achievement 2"
+                    TextColor="Black"
+                    FontSize="15"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Start"
+                    FontAttributes="Bold"
+                    Margin="10,135,90,0"/>
+                <BoxView 
+                    Color="Black"
+                    HeightRequest="1"
+                    WidthRequest="285"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="Start"
+                    Margin="0,168,0,0"/>
+                <Image
+                    Source="ribbonblk.png"
+                    HeightRequest="40"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Start"
+                    Margin="50,175,0,0"/>
+                <Label
+                    Text="Achievement 3"
+                    TextColor="Black"
+                    FontSize="15"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Start"
+                    FontAttributes="Bold"
+                    Margin="10,185,90,0"/>
+                <BoxView 
+                    Color="Black"
+                    HeightRequest="1"
+                    WidthRequest="285"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="Start"
+                    Margin="0,220,0,0"/>
+                <Image
+                    Source="ribbonblk.png"
+                    HeightRequest="40"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Start"
+                    Margin="50,225,0,0"/>
+                <Label
+                    Text="Achievement 4"
+                    TextColor="Black"
+                    FontSize="15"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Start"
+                    FontAttributes="Bold"
+                    Margin="10,235,90,0"/>
+                <BoxView 
+                    Color="Black"
+                    HeightRequest="1"
+                    WidthRequest="285"
+                    HorizontalOptions="Fill"/>
+            </Grid>
+        </StackLayout>
+
+    </ScrollView>
+
+</ContentPage>

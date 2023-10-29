@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Promee_Prototype2.Promee_BellNotifications"
+             Title="Promee_BellNotifications">
+    <AbsoluteLayout>
+        <BoxView Color="#FFB800"
+                  HeightRequest="130"
+                 WidthRequest="1000"
+                 AbsoluteLayout.LayoutFlags="XProportional"
+             AbsoluteLayout.LayoutBounds="0, 0, 20, 20" />
+
+
+        <Image
+            x:Name="BackBtn"
+            Source="backbtn.png"
+            HeightRequest="75"
+            WidthRequest="25"
+            AbsoluteLayout.LayoutFlags="XProportional"
+            AbsoluteLayout.LayoutBounds="0.05, 25, 20, 20"/>
+
+        <Label x:Name="Today"
+         Text="Today" 
+         VerticalTextAlignment="Center"
+         FontFamily="OpenSans-Regular.ttf"
+         WidthRequest="50"
+        FontAttributes="Bold"
+         FontSize="12" 
+        AbsoluteLayout.LayoutFlags="XProportional"
+        AbsoluteLayout.LayoutBounds="0.12, 90, 20, 20"
+        />
+
+        <Label x:Name="happss"
+                 Text="1 week ago" 
+                 VerticalTextAlignment="Center"
+                 FontFamily="OpenSans-Regular.ttf"
+                 WidthRequest="70"
+                FontAttributes="Bold"
+                 FontSize="12" 
+                AbsoluteLayout.LayoutFlags="XProportional"
+                AbsoluteLayout.LayoutBounds="0.12, 230, 20, 20"
+                />
+        <VerticalStackLayout 
+                Margin="10,120,0,0"
+                Spacing="6" >
+
+            <HorizontalStackLayout
+                     Spacing="10" >
+
+                <Image 
+                x:Name="friendcircle1"
+                Source="friendcircle.png"
+                HeightRequest="60"
+                WidthRequest="60" 
+                />
+                <Label 
+                 x:Name="Friend1"
+                 Text="Saint Peter sent you a friend request."
+                 WidthRequest="150"
+                 VerticalTextAlignment="Center"
+                 FontFamily="OpenSans-Regular.ttf"
+                 FontAttributes="Bold"
+                 FontSize="12" />
+
+                <ImageButton
+                    x:Name="accept1"
+                    Source="acceptbtn.png"
+                    HeightRequest="70"
+                    WidthRequest="70" />
+                <ImageButton
+                    x:Name="x1"
+                    Source="xbtn.png"
+                    HeightRequest="20"
+                    WidthRequest="20"/>
+
+
+
+
+
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+
+        <HorizontalStackLayout Margin="10,150,0, 0"
+            Spacing="2">
+            <VerticalStackLayout 
+               Margin="0,100,0, 0"
+                Spacing="6">
+
+
+                <HorizontalStackLayout
+                   Spacing="10" >
+
+                    <Image 
+            x:Name="friendcircle2"
+            Source="friendcircle.png"
+            HeightRequest="60"
+            WidthRequest="60"
+             />
+                    <Label 
+            x:Name="Friend2"
+            Text="Andrew invites you to a group."
+            WidthRequest="150"
+            VerticalTextAlignment="Center"
+            FontFamily="OpenSans-Regular.ttf"
+            FontAttributes="Bold"
+            FontSize="12" />
+                    <ImageButton 
+            x:Name="accept2"
+            Source="acceptbtn.png"
+            HeightRequest="70"
+            WidthRequest="70" />
+                    <ImageButton 
+            x:Name="x2"
+            Source="xbtn.png"
+            HeightRequest="20"
+            WidthRequest="20"/>
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout
+                 Spacing="10" >
+                    <Image 
+            x:Name="friendcircle3"
+            Source="friendcircle.png"
+            HeightRequest="60"
+            WidthRequest="60"
+             />
+
+                    <Label 
+             x:Name="Friend3"
+             Text="Friend 1 created a task."
+             WidthRequest="150"
+             VerticalTextAlignment="Center"
+             FontFamily="OpenSans-Regular.ttf"
+             FontAttributes="Bold"
+             FontSize="12" />
+                    <ImageButton
+            x:Name="accept3"
+            Source="acceptbtn.png"
+            HeightRequest="70"
+            WidthRequest="70" />
+                    <ImageButton
+            x:Name="x3"
+            Source="xbtn.png"
+            HeightRequest="20"
+            WidthRequest="20" />
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout
+                    Spacing="10"
+                    >
+                    <Image 
+            x:Name="friendcircle4"
+            Source="friendcircle.png"
+            HeightRequest="60"
+            WidthRequest="60"
+            />
+
+                    <Label 
+            x:Name="Friend4"
+            Text="Friend 1 assigned you a task."
+            WidthRequest="150"
+            VerticalTextAlignment="Center"
+            FontFamily="OpenSans-Regular.ttf"
+            FontAttributes="Bold"
+            FontSize="12" />
+                    <ImageButton 
+            x:Name="accept4"
+            Source="acceptbtn.png"
+            HeightRequest="70"
+            WidthRequest="70" />
+                    <ImageButton
+            x:Name="x4"
+            Source="xbtn.png"
+            HeightRequest="20"
+            WidthRequest="20" />
+                </HorizontalStackLayout>
+
+            </VerticalStackLayout>
+        </HorizontalStackLayout>
+
+    </AbsoluteLayout>
+
+</ContentPage>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Promee_Prototype2.Promee_LoginSignUp.Promee_Login"
+             Title="Promee_Login"
+             >
+    <ScrollView>
+        <VerticalStackLayout>
+
+
+            <Image
+                Source="promee_logo.png"
+                Margin="40"/>
+
+
+            <Label
+                Text="Sign-in to continue"
+                FontSize="15"
+                Margin="30, 0, 30, 50"
+                HorizontalTextAlignment="Start"
+                TextColor="Black"/>
+
+            <Label
+                Text="USERNAME"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Start"
+                Margin="30, 15, 0, 10"
+                TextColor="Black"
+                FontSize="20"/>
+
+            <Grid>
+                <BoxView 
+                    Color="White" 
+                    CornerRadius="5"
+                    HeightRequest="50" 
+                    HorizontalOptions="Fill" 
+                    Margin="30, 0, 30, 10" />
+
+                <Entry
+                    Placeholder="Enter your Username"
+                    Margin="30, 0, 30, 10"
+                    TextColor="Black"
+                    HeightRequest="50"/>
+
+            </Grid>
+            <Label
+                Text="PASSWORD"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Start"
+                Margin="30, 15, 0, 10"
+                TextColor="Black"
+                FontSize="20"/>
+
+
+            <Grid>
+                <BoxView 
+                    Color="White" 
+                    CornerRadius="5"
+                    HeightRequest="50" 
+                    HorizontalOptions="FillAndExpand" 
+                    Margin="30, 0, 30, 10"/>
+
+                <Entry
+                    Placeholder="Enter your Password"
+                    Margin="30, 0, 30, 10"
+                    TextColor="Black"
+                    HeightRequest="50"/>
+            </Grid>
+
+            <Button
+                Text="Log In"
+                TextColor="White"
+                Margin="30, 30, 30, 10"
+                Background="Black"
+                Clicked="OnLogin"/>
+
+            <Label
+                Text="Forgot Password?"
+                HorizontalTextAlignment="Center"
+                TextColor="Black"/>
+
+
+            <Button
+                Text="Sign up"
+                WidthRequest="100"
+                BackgroundColor="Transparent"
+                VerticalOptions="Center"
+                TextColor="Black"
+                Clicked="OnSignUp"/>
+
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+</ContentPage>

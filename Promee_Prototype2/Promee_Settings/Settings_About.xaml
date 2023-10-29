@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Promee_Prototype2.Promee_Settings.Settings_About"
+             Title="Settings_About">
+    <ScrollView>
+        <VerticalStackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="73" />
+                </Grid.RowDefinitions>
+
+                <BoxView Color="#FFB800"
+                         Grid.Row="0" />
+
+                <Image
+                    Source="about_page.png"
+                    HeightRequest="25"
+                    HorizontalOptions="Center" />
+
+            </Grid>
+
+            <Label
+                Text="About Promee"
+                TextColor="Black"
+                FontAttributes="Bold"
+                FontFamily="Arial"
+                FontSize="30"                                                                     
+                HorizontalOptions="Center"
+                Margin="0,35,0,0"/>
+
+            <Label
+                Text="Welcome to Promee, your go-to resource for time management success! We are aware that time is one of your most valuable resources in the fast-paced world of today. We have therefore developed a potent and simple-to-use time management solution to assist you in making the most of every moment."
+                TextColor="Black"
+                HorizontalTextAlignment="Center"
+                FontFamily="Arial"
+                FontSize="20"
+                Margin="20,35,20,0"/>
+
+            <Label
+                Text="Meet Our Team:"
+                TextColor="Black"
+                FontAttributes="Bold"
+                FontFamily="Arial"
+                FontSize="30"
+                HorizontalOptions="Center"
+                Margin="0,35,0,0"/>
+
+            <Label
+                Text="Our time management system application is the product of eight outstanding Computer Science students who worked tirelessly and with commitment to create the project. Our developers are dedicated about developing cutting edge solutions that enable users to make the most of their time."
+                TextColor="Black"
+                HorizontalTextAlignment="Center"
+                FontFamily="Arial"
+                FontSize="20"
+                Margin="29,35,28,0"/>
+
+            <Label
+                Text="Discover the people behind the Development:"
+                TextColor="Black"
+                HorizontalTextAlignment="Center"
+                FontFamily="Arial"
+                FontSize="20"
+                Margin="0,35,0,0" />
+
+            <Label
+                Text="Alito, Fhranz - Frontend Developer"
+                TextColor="Black"
+                HorizontalTextAlignment="Center"
+                FontFamily="Arial"
+                FontSize="20" 
+                Margin="0,15,0,0"/>
+
+
+            <Label
+                Text="Dingson, Bea - Frontend Developer"
+                TextColor="Black"
+                HorizontalTextAlignment="Center"
+                FontFamily="Arial"
+                FontSize="20" 
+                Margin="0,5,0,0"/>
+
+            <Label
+                Text="Monchez, Mhicaella - Frontend Developer"
+                TextColor="Black"
+                HorizontalTextAlignment="Center"
+                FontFamily="Arial"
+                FontSize="20" 
+                Margin="0,5,0,0"/>
+
+            <Label
+                Text="Manaloto, David - Frontend Developer"
+                TextColor="Black"
+                HorizontalTextAlignment="Center"
+                FontFamily="Arial"
+                FontSize="20" 
+                Margin="0,5,0,0"/>
+
+            <Label
+                Text="Crisostomo, Joar - Backend Developer"
+                TextColor="Black"
+                HorizontalTextAlignment="Center"
+                FontFamily="Arial"
+                FontSize="20" 
+                Margin="0,15,0,0"/>
+
+            <Label
+                Text="Elcano, Hannah - Backend Developer"
+                TextColor="Black"
+                HorizontalTextAlignment="Center"
+                FontFamily="Arial"
+                FontSize="20" 
+                Margin="0,5,0,0"/>
+
+            <Label
+                Text="Fajelga, Stephen - Backend Developer"
+                TextColor="Black"
+                HorizontalTextAlignment="Center"
+                FontFamily="Arial"
+                FontSize="20" 
+                Margin="0,5,0,0"/>
+
+            <Label
+                Text="Pineda, Andre - Backend Developer"
+                TextColor="Black"
+                HorizontalTextAlignment="Center"
+                FontFamily="Arial"
+                FontSize="20" 
+                Margin="0,5,0,20"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

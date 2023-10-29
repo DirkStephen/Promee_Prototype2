@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Promee_Prototype2.Promee_Settings.Settings_Language"
+             Title="Settings_Language">
+    <ScrollView>
+        <VerticalStackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="73" />
+                </Grid.RowDefinitions>
+
+                <BoxView Color="#FFB800"
+                         Grid.Row="0" />
+
+                <Label
+                  Text="Language"
+                  FontFamily="EricaOne"
+                  FontSize="25"
+                  HorizontalOptions="Center"/>  
+             
+            </Grid>
+
+            <StackLayout Orientation="Horizontal">
+                <Image
+                    Source="uk_flag.png"
+                    HeightRequest="40"
+                    HorizontalOptions="Start"
+                    Margin="30, 20, 0 , 0" />
+
+                <Label
+                    Text="English, UK"
+                    FontFamily="Arial"
+                    TextColor="Black"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"
+                    FontSize="15"
+                    Margin="15, 30, 0, 0"/>
+
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Image
+                    Source="us_flag.png"
+                    HeightRequest="40"
+                    HorizontalOptions="Start"
+                    Margin="30, 20, 0 , 0" />
+
+                <Label
+                    Text="English, US"
+                    FontFamily="Arial"
+                    TextColor="Black"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"
+                    FontSize="15"
+                    Margin="15, 30, 0, 0"/>
+
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+
+                <Image
+                    Source="ph_flag.png"
+                    HeightRequest="40"
+                    HorizontalOptions="Start"
+                    Margin="30, 20, 0 , 0" />
+
+                <Label
+                    Text="Filipino"
+                    FontFamily="Arial"
+                    TextColor="Black"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"
+                    FontSize="15"
+                    Margin="15, 30, 0, 0"/>
+
+            </StackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

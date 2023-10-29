@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Promee_Prototype2.Promee_LoginSignUp.Promee_SignUp"
+             Title="Promee_SignUp">
+    <ScrollView>
+        <VerticalStackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200" />
+                </Grid.RowDefinitions>
+
+                <BoxView Color="Black" Grid.Row="0" />
+
+                <Image
+                    Source="ctr.png"
+                    HeightRequest="55"
+                    Margin="0, 0, 0, 40"/>
+
+                <Label
+                    Text="Already registered? Log in here"
+                    TextColor="Gray"
+                    HorizontalOptions="Center"
+                    VerticalOptions="End"
+                    Margin="0, 0, 0, 30"/>
+
+            </Grid>
+
+            <Label
+                Text="USERNAME"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Start"
+                Margin="30, 30, 0, 5"
+                TextColor="Black"
+                FontSize="20"/>
+
+            <Grid>
+                <BoxView 
+                    Color="White" 
+                    CornerRadius="5"
+                    HeightRequest="50" 
+                    HorizontalOptions="Fill" 
+                    Margin="30, 0, 30, 10" />
+
+                <Entry
+                    Placeholder="Enter your Username"
+                    Margin="30, 0, 30, 10"
+                    TextColor="Black"
+                    HeightRequest="50"/>
+            </Grid>
+
+            <Label
+                Text="EMAIL"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Start"
+                Margin="30, 30, 0, 5"
+                TextColor="Black"
+                FontSize="20"/>
+
+            <Grid>
+                <BoxView 
+                    Color="White" 
+                    CornerRadius="5"
+                    HeightRequest="50" 
+                    HorizontalOptions="Fill" 
+                    Margin="30, 0, 30, 10" />
+
+                <Entry
+                    Placeholder="Enter your Email"
+                    Margin="30, 0, 30, 10"
+                    TextColor="Black"
+                    HeightRequest="50"/>
+            </Grid>
+
+            <Label
+                Text="PASSWORD"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Start"
+                Margin="30, 30, 0, 5"
+                TextColor="Black"
+                FontSize="20"/>
+
+            <Grid>
+                <BoxView 
+                    Color="White" 
+                    CornerRadius="5"
+                    HeightRequest="50" 
+                    HorizontalOptions="Fill" 
+                    Margin="30, 0, 30, 10" />
+
+                <Entry
+                    Placeholder="Enter your Password"
+                    Margin="30, 0, 30, 10"
+                    TextColor="Black"
+                    HeightRequest="50"/>
+            </Grid>
+
+            <Label
+                Text="CONFIRM PASSWORD"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Start"
+                Margin="30, 30, 0, 5"
+                TextColor="Black"
+                FontSize="20"/>
+
+            <Grid>
+                <BoxView 
+                    Color="White" 
+                    CornerRadius="5"
+                    HeightRequest="50" 
+                    HorizontalOptions="Fill" 
+                    Margin="30, 0, 30, 10" />
+
+                <Entry
+                    Placeholder="Confirm Password"
+                    Margin="30, 0, 30, 10"
+                    TextColor="Black"
+                    HeightRequest="50"/>
+            </Grid>
+
+            <Button
+                Text="Sign up"
+                TextColor="White"
+                Margin="30, 30, 30, 10"
+                Background="Black"/>
+
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Promee_Prototype2.Promee_Menu.Promee_SettingsPage"
+             Title="Promee_SettingsPage">
+    <Shell.TitleView>
+        <Image 
+           Source="promeelogobig.png"
+           Margin="-65,0,0,0"
+        />
+    </Shell.TitleView>
+    <ScrollView>
+        <VerticalStackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="73" />
+                </Grid.RowDefinitions>
+
+
+
+                <BoxView 
+                    Color="#FFB800"
+                    Grid.Row="0" />
+                <Label
+                     Text="Settings"
+                     FontFamily="EricaOne"
+                     FontSize="25"
+                     HorizontalOptions="Center"/>
+
+            </Grid>
+            <StackLayout Orientation="Horizontal"
+                         Spacing="40"
+                         Padding="10">
+                <Image
+                    Source="notification_icon.png"
+                    HeightRequest="30"
+                    HorizontalOptions="Start"
+                    Margin="10, 30, 0 , 0" />
+
+                <Label
+                    Text="Notifications"
+                    TextColor="Black"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"
+                    FontSize="18"
+                    Margin="0, 32, 0, 0"/>
+
+                <Image
+                    Source="go_arrow.png"
+                    HeightRequest="30"
+                    HorizontalOptions="End"
+                    Margin="115, 20, 0 , 0" >
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Tapped="OnImage1Tapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
+
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal"
+                         Spacing="40"
+                         Padding="10">
+                <Image
+                     Source="night_mode.png"
+                     HeightRequest="30"
+                     HorizontalOptions="Start"
+                     Margin="10, 30, 0 , 0" />
+
+                <Label
+                     Text="Night Mode"
+                     TextColor="Black" 
+                     FontAttributes="Bold"
+                     HorizontalOptions="Center"
+                     FontSize="18"
+                     Margin="0, 32, 0, 0"/>
+
+                <Switch
+                    IsToggled="True"
+                    OnColor="Black"
+                    ThumbColor="Yellow"
+                    HeightRequest="30"
+                    HorizontalOptions="End"
+                    Margin="115, 20, 0 , 0" />
+            </StackLayout>
+
+
+
+            <StackLayout Orientation="Horizontal"
+                         Spacing="40"
+                         Padding="10">
+                <Image
+                    Source="language.png"
+                    HeightRequest="30"
+                    HorizontalOptions="Start"
+                    Margin="10, 30, 0 , 0" />
+
+                <Label
+                Text="Language"
+                TextColor="Black"
+                HorizontalOptions="Center"
+                FontSize="18"
+                FontAttributes="Bold"
+                Margin="0, 32, 0, 0"/>
+
+                <Image
+                    Source="go_arrow.png"
+                    HeightRequest="30"
+                    HorizontalOptions="End"
+                    Margin="138, 20, 0 , 0" >
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Tapped="OnImage2Tapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
+
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal"
+                         Spacing="40"
+                         Padding="10">
+                <Image
+                    Source="about.png"
+                    HeightRequest="30"
+                    HorizontalOptions="Start"
+                    Margin="10, 30, 0 , 0" />
+
+                <Label
+                    Text="About"
+                    TextColor="Black"
+                    HorizontalOptions="Center"
+                    FontSize="18"
+                    FontAttributes="Bold"
+                    Margin="0, 32, 0, 0"/>
+
+                <Image
+                    Source="go_arrow.png"
+                    HeightRequest="30"
+                    HorizontalOptions="End"
+                    Margin="168, 20, 0 , 0" >
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Tapped="OnImage3Tapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
+
+            </StackLayout>
+
+            <StackLayout 
+                Orientation="Horizontal"
+                Spacing="40"
+                Padding="10">
+                <Image
+                     Source="help_btn.png"
+                     HeightRequest="30"
+                     HorizontalOptions="Start"
+                     Margin="10, 30, 0 , 0" />
+
+                <Label
+                     Text="Help"
+                     TextColor="Black"
+                     HorizontalOptions="Center"
+                     FontSize="18"
+                     FontAttributes="Bold"
+                     Margin="0, 32, 0, 0"/>
+
+                <Image
+                     Source="go_arrow.png"
+                     HeightRequest="30"
+                     HorizontalOptions="End"
+                     Margin="180, 20, 0 , 0" >
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Tapped="OnImage4Tapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
+
+            </StackLayout>
+
+
+
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+
+</ContentPage>

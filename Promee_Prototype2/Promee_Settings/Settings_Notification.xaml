@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Promee_Prototype2.Promee_Settings.Settings_Notification"
+             Title="Settings_Notification">
+    <ScrollView>
+        <VerticalStackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="73"/>
+                </Grid.RowDefinitions>
+
+
+                <BoxView 
+                    Color="#FFB800"
+                    Grid.Row="0" />
+                <Label
+                      Text="Notifications"
+                      FontFamily="EricaOne"
+                      FontSize="25"
+                      HorizontalOptions="Center"/>
+            </Grid>
+
+            <StackLayout 
+                Orientation="Horizontal">
+                
+                <Label
+                    Text="Vibrate"
+                    TextColor="Black"
+                    HorizontalOptions="Center"
+                    FontSize="15"
+                    FontAttributes="Bold"
+                    Margin="30, 45, 0, 0"/>
+
+                <Switch
+                    IsToggled="True"
+                    OnColor="Black"
+                    ThumbColor="Yellow"
+                    HeightRequest="30"
+                    HorizontalOptions="End"
+                    Margin="250, 40, 0 , 0" />
+
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Label
+                     Text="Sounds"
+                     TextColor="Black"
+                     HorizontalOptions="Center"
+                     FontSize="15"
+                     FontAttributes="Bold"
+                     Margin="30, 45, 0, 10"/>
+
+                <Switch
+                    IsToggled="True"
+                    OnColor="Black"
+                    ThumbColor="Yellow"
+                    HeightRequest="30"
+                    HorizontalOptions="End"
+                    Margin="248, 40, 0 , 0" />
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Label
+                    Text="Notify time spent"
+                    TextColor="Black"
+                    HorizontalOptions="Center"
+                    FontSize="15"
+                    FontAttributes="Bold"
+                    Margin="40, 10, 0, 10"/>
+
+                <Switch
+                    IsToggled="True"
+                    OnColor="Black"
+                    ThumbColor="Yellow"
+                    HeightRequest="30"
+                    HorizontalOptions="End"
+                    Margin="180,0,0,0"/>
+
+
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Label
+                    Text="Notify when friend created a task"
+                    TextColor="Black"
+                    HorizontalOptions="Center"
+                    FontSize="15"
+                    FontAttributes="Bold"
+                    Margin="40, 10, 0, 10"/>
+
+                <Switch
+                    IsToggled="True"
+                    OnColor="Black"
+                    ThumbColor="Yellow"
+                    HeightRequest="30"
+                    HorizontalOptions="End"
+                    Margin="85, 0, 0 , 0" />
+
+
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Label
+                    Text="Notify friend requests"
+                    TextColor="Black"
+                    HorizontalOptions="Center"
+                    FontAttributes="Bold"
+                    FontSize="15"
+                    Margin="40, 10, 0, 10"/>
+
+                <Switch
+                    IsToggled="True"
+                    OnColor="Black"
+                    ThumbColor="Yellow"
+                    HeightRequest="30"
+                    HorizontalOptions="End"
+                    Margin="151, 0, 0 , 0" />
+
+
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Label
+                    Text="Notify group invitation"
+                    TextColor="Black"
+                    HorizontalOptions="Center"
+                    FontAttributes="Bold"
+                    FontSize="15"
+                    Margin="40, 10, 0, 10"/>
+
+                <Switch
+                    IsToggled="True"
+                    OnColor="Black"
+                    ThumbColor="Yellow"
+                    HeightRequest="30"
+                    HorizontalOptions="End"
+                    Margin="148, 0, 0 , 0" />
+
+            </StackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Promee_Prototype2.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Promee_Prototype2"
+    xmlns:local1="clr-namespace:Promee_Prototype2.Promee_LoginSignUp"
+    xmlns:view="clr-namespace:Promee_Prototype2.Promee_Menu"
+    Shell.FlyoutBehavior="Flyout"
+    BackgroundColor="#FFB800"
+    ForegroundColor="Black"
+    Shell.TabBarIsVisible="False"
+    FlyoutIcon="burgerblk.png" 
+    FlyoutBackground="White"
+    x:Name="shell">
+
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+    <FlyoutItem
+       Title="Menu"
+       FlyoutDisplayOptions="AsMultipleItems">
+
+        <ShellContent
+           Title="Profile"
+           ContentTemplate="{DataTemplate view:Promee_ProfilePage}"
+           Route="Promee_ProfilePage">
+        </ShellContent>
+
+        <ShellContent
+           Title="Friends"
+           ContentTemplate="{DataTemplate view:Promee_FriendsPage}"
+           Route="Promee_FriendsPage">
+        </ShellContent>
+
+        <ShellContent
+           Title="Groups"
+           ContentTemplate="{DataTemplate view:Promee_GroupsPage}"
+           Route="Promee_GroupsPage">
+        </ShellContent>
+
+        <ShellContent
+           Title="Settings"
+           ContentTemplate="{DataTemplate view:Promee_SettingsPage}"
+           Route="Promee_SettingsPage">
+        </ShellContent>
+
+    </FlyoutItem>
+
+    <Shell.FlyoutHeader>
+        <VerticalStackLayout
+            WidthRequest="100">
+            <Label Text="MENU" FontSize="30" FontFamily="EricaOne-Regular.ttf" HorizontalTextAlignment="Center" TextColor="#FFB800" />
+
+        </VerticalStackLayout>
+
+    </Shell.FlyoutHeader>
+
+<!--<Shell.FlyoutContent>
+        <CollectionView BindingContext="{x:Reference shell}"
+                        IsGrouped="True"
+                        ItemsSource="{Binding FlyoutItems}" >
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Label Text="{Binding Title}"
+                           TextColor="#FFB800"
+                           FontSize="25" 
+                           FontFamily="OpenSans-Regular.ttf"
+                           FontAttributes="Bold"
+                           HorizontalTextAlignment="Center"
+                           Margin="0,30,0,0"
+                           />
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Shell.FlyoutContent>--> 
+    
+
+    
+
+</Shell>
